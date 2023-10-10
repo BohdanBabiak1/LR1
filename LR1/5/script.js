@@ -1,7 +1,5 @@
 let names = []
 let subnames = []
-let name = ""
-let subname = ""
 
 while (true) {
   count = prompt("Введіть кількість студентів в групі: ")
@@ -15,19 +13,19 @@ while (true) {
 
 for (let i=0; i<count; i++){
   while (true) {
-    name = (prompt(`Введіть ім'я ${i+1}-го студента: `))
-    if (/\s/.test(name) || /\d/.test(name) || /^[a-z]/.test(name) || name==''){
+    name_ = (prompt(`Введіть ім'я ${i+1}-го студента: `))
+    if (/\s/.test(name_) || /\d/.test(name_) || /^[^\p{Lu}]./u.test(name_) || name_==''){
       alert("Ім'я написано не коректно (містить пробіли, цифри або перша буква не є великою)")
     }
     else{ 
-      names.push(name)
+      names.push(name_)
       break 
     }
   }
     
   while (true) {
     subname = (prompt(`Введіть прізвище ${i+1}-го студента: `))
-    if (/\s/.test(subname) || /\d/.test(subname) || /^[a-z]/.test(subname) || subname==''){
+    if (/\s/.test(subname) || /\d/.test(subname) || /^[^\p{Lu}]./u.test(subname) || subname==''){
       alert("Прізвище написано не коректно (містить пробіли, цифри або перша буква не є великою)")
     }
     else{ 
