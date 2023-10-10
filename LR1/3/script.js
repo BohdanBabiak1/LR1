@@ -1,7 +1,7 @@
 var month = prompt("Введіть цифру місяця: ")
 
 switch (true) {
-  case (month >= 1 && month <= 2 || month === 12):
+  case (month >= 1 && month <= 2 || month == 12):
     alert("Зима")
     break
   case (month >= 3 && month <= 5):
