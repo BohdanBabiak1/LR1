@@ -1,5 +1,7 @@
 let names = []
 let subnames = []
+let name = ""
+let subname = ""
 
 while (true) {
   count = prompt("Введіть кількість студентів в групі: ")
