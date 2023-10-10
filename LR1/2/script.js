@@ -1,3 +1,2 @@
-if (info = prompt("Введіть ПІБ")){
-    alert(info)
-}
+info = prompt("Введіть інформацію: ")
+alert(info)
